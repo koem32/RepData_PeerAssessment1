@@ -52,7 +52,7 @@ To average the five minute intervals across days I am going to make a vector usi
 
 ```r
 avStepsPerInterval<-tapply(data$steps,data$interval,mean,na.rm=T)
-plot(avStepsPerInterval, type="l")
+plot(avStepsPerInterval, type="l",xlab="interval", ylab="Average steps per day for interval")
 ```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
